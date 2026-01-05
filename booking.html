@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+
+</head>
+<body>
+
+<!-- ===== Sticky Header ===== -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">☕ CoffeeShop</a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="call-btn">
+      <a href="tel:+8801700000000">📞 Call Us Now</a>
+      <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+
+    <script>
+        function calculateTotal() {
+            let total = 0;
+            document.querySelectorAll('.price').forEach(function(row) {
+                let qty = parseInt(row.querySelector('.qty').value);
+                let price = parseFloat(row.querySelector('.price_value').value);
+                row.querySelector('.subtotal').innerText = (qty * price).toFixed(2);
+                total += qty * price;
+            });
+            document.getElementById('totalPrice').innerText = total.toFixed(2);
+        }
+    </script>
+	
+	<section class="menu-section">
+    <!-- Heading Column -->
+    <div class="heading-column">
+       <h1>Booking Summary</h1>
+    </div>
+ <div class="menu-column">
+  <h3>Your Selected Coffees</h3>
+<form method="POST" action="confirm_booking.html">
+    <table>
+        <tr>
+            <th>Coffee Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+        </tr>
+                <tr class="price">
+            <td>Hot Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+		
+		  <tr class="price">
+            <td>Cold Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+		  <tr class="price">
+            <td>Iced Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+		  <tr class="price">
+            <td>Mocha Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+		  <tr class="price">
+            <td>Americano Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+		  <tr class="price">
+            <td>Black Coffee</td>
+            <td>
+                <input type="number" name="quantities[]" value="3" min="0" class="qty" onchange="calculateTotal()"> Cup
+                <input type="hidden" name="coffee_ids[]" value="1">
+            </td>
+            <td>$20.00<input type="hidden" name="prices[]" value="20" class="price_value"></td>
+            <td class="subtotal">120.00</td>
+        </tr>
+           
+
+    <tr><td colspan="3"><p class="total">Total:</p> </td><td><p class="total">$<span id="totalPrice"></span></p></td>
+ </table>
+    <h3>Customer Details</h3>
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <input type="text" name="phone" placeholder="Your Phone" required><br><br>
+    <input type="date" name="booking_date" required><br><br>
+
+    <button type="submit" onclick="alert('Your booking is confirmed!')">Confirm Booking</button>
+</form>
+</div>
+</section>
+<script>calculateTotal();</script>
+<!-- ===== Footer Section ===== -->
+<footer class="site-footer">
+
+  <!-- Top Footer -->
+  <div class="footer-top container">
+    <!-- Column 1: Logo + About -->
+    <div class="footer-col">
+      <h2 class="footer-logo">☕ CoffeeShop</h2>
+      <p>Brewing perfection, one cup at a time.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: New Taste -->
+    <div class="footer-col">
+      <h3>Discover our latest blends</h3>
+	  
+      <ul>
+                  <li>Hot Coffee</li>
+              </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <ul>
+        <li>📞 +880153456789</li>
+        <li>✉ info@coffeeshop.com</li>
+        <li>📍 Mymensingh, Bangladesh</li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer / Second Section -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 CoffeeShop. All Rights Reserved. </p>
+  </div>
+</footer>
+
+ <script src="assets/js/main.js"></script>
+
+</body>
+</html>

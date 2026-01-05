@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+     
+
+</head>
+<body>
+    <!-- ===== Sticky Header ===== -->
+     <header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">☕ CoffeeShop</a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+     <div class="call-btn">
+      <a href="tel:+8801700000000">📞 Call Us Now</a>
+      <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Slider -->
+<section class="banner">
+  
+<div class="hero-slider">
+            <div class="slide active" style="background-image: url('./images/co.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Coffee Shop</h1>
+                <p>more-or-less normal distribution of letters, as opposed to using </p>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+		<div class="slide " style="background-image: url('assets/images/1759474251_ice-coffee-tall-glass-cream-600nw-2333005689.webp');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Coffee Shop 2</h1>
+                <p>more-or-less normal distribution of letters, as opposed to using </p>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section class="about-section">
+    <div class="about-content">
+        <!-- Image Column -->
+        <div class="about-image">
+            <img src="./images/cofff.jpg" alt="About Us Image" height="550px">
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-text">
+            <h2>About Coffee Shop</h2>
+            <h4>Fresh Coffee, Cozy Place</h4>
+            <p>
+               At our coffee shop, we believe coffee is more than just a drink — it’s an experience. From the moment you walk through our doors, the aroma of freshly roasted beans welcomes you into a warm and inviting space where every cup is crafted with passion.
+</p><p>
+We carefully select the finest beans, roast them to perfection, and brewed with love to bring out their authentic flavors. Whether you’re here for your morning boost, a relaxing afternoon break, or a cozy chat with friends, we make sure each sip feels special.
+</p><p>
+With a dedication to quality, hospitality, and community, we’ve become more than just a coffee shop — we’re a place where people connect, unwind, and create memories over coffee.
+            </p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </div>
+</section>
+<!-- Our Coffee Section -->
+
+<section class="our-coffee">
+  
+    <h2>Our Signature Coffees</h2>
+	<p>Discover the perfect blend crafted for your taste buds. Every cup is a journey of flavor and passion.</p>
+	
+	
+    <div class="coffee-grid">
+                    <div class="coffee-card">
+                <img src="./images/menu-2.jpg" alt="Hot Coffee">
+                <div class="coffee-card-content">
+                    <h3>Hot Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+			
+			                    <div class="coffee-card">
+                <img src="./images/menu-3.avif" alt="Cold Coffee">
+                <div class="coffee-card-content">
+                    <h3>Cold Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+			
+			                    <div class="coffee-card">
+                <img src="./images/menu-7.avif" alt="Iced Coffee">
+                <div class="coffee-card-content">
+                    <h3>Iced Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+			
+			                    <div class="coffee-card">
+                <img src="./images/menu-6.jpeg" alt="Mocha Coffee">
+                <div class="coffee-card-content">
+                    <h3>Mocha Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+			
+			          
+			                    <div class="coffee-card">
+                <img src="./images/menu-11.jpg" alt="Americano Coffee">
+                <div class="coffee-card-content">
+                    <h3>Americano Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+			
+			                    <div class="coffee-card">
+                <img src="./images/menu-0.jpg" alt="Black Coffee
+				
+                <div class="coffee-card-content">
+                    <h3>Black Coffee</h3>
+                    <p>looking at its layout. The point of</p>
+                </div>
+            </div>
+		
+	<div class="container">
+	
+	   <a href="contact.html" class="btn">Contact Us</a>
+      <a href="menu.html" class="btn"> Order Now</a>
+      </div>   
+    
+</section>
+
+<!-- Fun Facts (Dynamic) -->
+
+<section class="funfact-section">
+    <div class="funfact-content">
+        <h2 class="funfact-title">Our Fun Facts</h2>
+        <div class="funfact-grid">
+                            <div class="funfact-card">
+                    <h3 class="counter" data-target="20">20</h3>
+                    <p>flavours</p>
+                </div>
+				
+				                            <div class="funfact-card">
+                    <h3 class="counter" data-target="1500+">1500+</h3>
+                    <p>happy customers</p>
+                </div>
+				
+				                            <div class="funfact-card">
+                    <h3 class="counter" data-target="10">10</h3>
+                    <p>years of experience</p>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- ===== Footer Section ===== -->
+<footer class="site-footer">
+
+  <!-- Top Footer -->
+  <div class="footer-top container">
+    <!-- Column 1: Logo + About -->
+    <div class="footer-col">
+      <h2 class="footer-logo">☕ CoffeeShop</h2>
+      <p>Brewing perfection, one cup at a time.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+		<li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: New Taste -->
+    <div class="footer-col">
+      <h3>Discover our latest blends</h3>
+	  
+      <ul>
+                  <li>Hot Coffee</li>
+              </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <ul>
+        <li>📞 +880153456789</li>
+        <li>✉ info@coffeeshop.com</li>
+        <li>📍 Mymensingh, Bangladesh</li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
